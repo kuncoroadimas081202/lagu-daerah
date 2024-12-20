@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.header {
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.header-links {
+    display: flex;
+    /* Mengatur agar elemen di dalamnya sejajar */
+    justify-content: right;
+    /* Menempatkan elemen di tengah secara horizontal */
+    margin-right: 30px;
+    /* Jarak di sebelah kanan header-links */
+    flex-grow: 1;
+    /* Memungkinkan header-links untuk tumbuh dan mengisi ruang yang tersedia */
+}
+
+.music-label,
+.podcast-label,
+.live-label {
+    margin-right: 15px;
+    /* Jarak antar tulisan baru */
+    font-size: 16px;
+    /* Ukuran font untuk link */
+    color: #666;
+    /* Warna font untuk link */
+}
+
+.trending-label {
+    margin-top: 200px;
+}
+
+.song-title {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.song-artist {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #bbb;
+}
+
+.play-count {
+    font-size: 14px;
+    color: #888;
+}
+
+.listen-now {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.listen-now:hover {
+    background-color: #555;
+}
+
+.fa-heart {
+    color: #f00;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.recently-played {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recently-played h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.recently-played-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Jarak antar item */
+}
+
+.recently-played-item {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    /* Atur lebar item */
+}
+
+.recently-played-cover {
+    width: 50px;
+    /* Atur lebar gambar */
+    height: auto;
+    /* Jaga agar proporsional */
+    margin-right: 10px;
+    /* Jarak antara gambar dan judul */
+}
+
+.recently-played-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recently-played-title {
+    font-size: 14px;
+    /* Ukuran font untuk judul */
+    white-space: nowrap;
+    /* Mencegah teks melanjutkan ke baris baru */
+    overflow: hidden;
+    /* Sembunyikan teks yang lebih panjang */
+    text-overflow: ellipsis;
+    /* Tampilkan '...' jika teks terlalu panjang */
+}
+
+
+.recently-played-artist {
+    font-size: 12px;
+    color: #bbb;
+}
+
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.player-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.player-progress {
+    width: 100%;
+    background-color: #444;
+    border-radius: 5px;
+    height: 5px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.progress {
+    background-color: #f00;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+.music-duration {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #bbb;
+    font-size: 12px;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 24px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.player-controls i:hover {
+    color: #fff;
+}
